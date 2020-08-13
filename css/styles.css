@@ -146,13 +146,22 @@ parado en el li correspondiente va a ejecutar el código */
     }
     /* BARRA LATERAL */
     
-    #aside {
+    #aside,
+    #frase {
+        clear: both;
         width: 200px;
         float: left;
         margin: 30px;
         background-color: white;
         border: 1px solid#ccc;
         box-shadow: 0px 2px 2px#ccc;
+        font-family: sans-serif, Arial, Helvetica;
+    }
+    
+    #frase {
+        width: 180px;
+        padding: 10px;
+        font-size: 14px;
         font-family: sans-serif, Arial, Helvetica;
     }
     
@@ -178,6 +187,7 @@ parado en el li correspondiente va a ejecutar el código */
         text-align: center;
         padding-top: 2px;
         padding-bottom: 2px;
+        margin-bottom: 15px;
         background-color: #f2f3f2;
         border: 1px solid #ccc;
         border-left: none;
@@ -236,4 +246,53 @@ parado en el li correspondiente va a ejecutar el código */
     button:active {
         box-shadow: 0px 0px 3px gray inset;
         text-shadow: 0px 0px 1px#ccc;
+    }
+    /* Formularios Barra Lateral */
+    
+    #aside div label,
+    #aside div input[type="text"],
+    #aside div input[type="email"],
+    #aside div input[type="password"],
+    #aside div a {
+        display: block;
+        width: 95%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    #aside div input[type="button"],
+    #aside div input[type="submit"],
+    #aside div button {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #aside input,
+    #aside label {
+        margin: 0px auto;
+        text-align: center;
+    }
+    /* Enlaces (estilos generales) */
+    
+    a {
+        color: #529125;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: #529125;
+    }
+    /* OJOOOOO. el hover debe de ir despues del visited */
+    
+    a:hover {
+        color: #285616;
+    }
+    /* Lista de el ultimo box de la barra lateral aside */
+    
+    #aside li {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        /* list-style: funciona para colocar viñetas personalizadas a las listas; */
+        list-style: square;
     }
