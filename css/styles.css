@@ -94,6 +94,7 @@ al nav el primer ul el primer li */
     line-height: 40px;
     float: left;
     border-right: 1px solid gray;
+    transition: all 300ms;
 }
 
 #nav>ul>li a {
@@ -106,4 +107,9 @@ al nav el primer ul el primer li */
 
 #nav>ul>li>a:first-child {
     border-left: 1px solid gray;
+}
+
+#nav>ul>li:hover {
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
 }
