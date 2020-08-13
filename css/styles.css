@@ -113,3 +113,39 @@ al nav el primer ul el primer li */
     background-color: #70b231;
     box-shadow: 0px 0px 4px green inset;
 }
+
+
+/* MENU DESPEGABLE */
+
+#nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+
+/* Aqui le estamos diciendo que cuando el el cursor este
+parado en el li correspondiente va a ejecutar el código */
+
+#nav>ul>li:hover>ul {
+    display: block;
+}
+
+#nav>ul>li:hover>ul>li {
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+#nav>ul>li:hover>ul>li>a {
+    color: rgb(59, 59, 59);
+}
+
+#nav>ul>li>ul>li:hover {
+    box-shadow: 0px 0px 6px #ccc inset;
+}
