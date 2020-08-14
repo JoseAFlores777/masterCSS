@@ -8,6 +8,13 @@
         font-weight: normal;
         font-style: normal;
     }
+    
+    @font-face {
+        font-family: "fajala";
+        src: url("fonts/FjallaOne-Regular.ttf") format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
     /* ESTILOS GENERALES */
     
     * {
@@ -27,6 +34,10 @@
     
     .blue {
         color: #0c73f2 !important;
+    }
+    
+    .orange {
+        color: #d69d2a!important;
     }
     /* CABECERA(HEADER) */
     
@@ -158,7 +169,6 @@ parado en el li correspondiente va a ejecutar el código */
     
     #aside,
     #frase {
-        clear: both;
         width: 200px;
         float: left;
         margin: 30px;
@@ -305,4 +315,60 @@ parado en el li correspondiente va a ejecutar el código */
         margin-left: 20px;
         /* list-style: funciona para colocar viñetas personalizadas a las listas; */
         list-style: square;
+    }
+    /* SECCIONES */
+    
+    #sections {
+        float: right;
+        width: 75%;
+        font-family: sans-serif, Arial, Helvetica;
+        margin: right;
+    }
+    
+    #sections .titulo {
+        font-family: "fajala";
+        font-size: 24px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: -20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid#ccc;
+    }
+    
+    #sections section {
+        margin-top: 40px;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid#ccc;
+        box-shadow: 0px 0px 4px#c9c9c9;
+        color: #333333;
+        font-size: 16px;
+        overflow: hidden;
+    }
+    
+    #sections .article {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #sections .date {
+        color: gray;
+        font-size: 14px;
+    }
+    
+    #sections .stickerOne,
+    #sections .stickerTwo {
+        /* absolute ya que seobrepone a la grid y no afecta a su dispocición */
+        position: absolute;
+        margin-top: -38px;
+        /* el z-index: sirve para determinar la pasicionde las capas , 
+        si un objeto tiene un z-index: mayor que otro, este se sobrepondrá sobre eñ menor*/
+        z-index: 0;
+    }
+    
+    #sections .stickerTwo {
+        margin-left: 860px;
     }
