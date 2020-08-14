@@ -54,6 +54,11 @@
         margin-right: 5px;
         margin-top: -1px;
     }
+    
+    .clearfix {
+        float: none;
+        clear: both;
+    }
     /* CABECERA(HEADER) */
     
     #header {
@@ -387,4 +392,26 @@ parado en el li correspondiente va a ejecutar el código */
     
     #sections .stickerTwo {
         margin-left: 860px;
+    }
+    
+    #history {
+        float: right;
+        margin-top: 20px;
+        font-family: sans-serif, Arial, Helvetica;
+        margin-right: 20px;
+    }
+    /* PIE DE PAGINA */
+    
+    #footer {
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        margin-top: 40px;
+        background-color: #333333;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+        box-shadow: 0px 0px 2px gray;
     }
