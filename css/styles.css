@@ -18,6 +18,16 @@
     body {
         background-image: url("../img/paven.png");
     }
+    
+    .red {
+        /* se le coloca importanta ya que más adelante en el codigo hay un bloque 
+        en donde se le da estilo de color gris y sobreescribe a este codigo */
+        color: #9b2422 !important;
+    }
+    
+    .blue {
+        color: #0c73f2 !important;
+    }
     /* CABECERA(HEADER) */
     
     #header {
